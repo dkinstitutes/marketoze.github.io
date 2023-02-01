@@ -2288,6 +2288,7 @@ span.anchor-circle {
 
 .partners-slider .logo-item {
     text-align: center;
+    background: linear-gradient(to right, #3264f5 2%, #7004bc 82%);
 }
 
 .map-area {
