@@ -2283,6 +2283,7 @@ span.anchor-circle {
     width: auto;
     max-width: 100%;
     display: inline-block;
+    background: linear-gradient(to right, #3264f5 2%, #7004bc 82%);
 }
 
 .partners-slider .logo-item {
