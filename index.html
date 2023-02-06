@@ -22,6 +22,7 @@
     <link href="vendor/css/owl.carousel.min.css" rel="stylesheet">
     <link href="vendor/css/swiper.min.css" rel="stylesheet">
     <link href="vendor/css/cubeportfolio.min.css" rel="stylesheet">
+    <link  href="thank.html" >
     <!-- Style Sheet -->
     <link href="agency/css/style.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
@@ -945,7 +946,7 @@
                         <h2 class="title mt-0">Get In Touch</h2>
                     </div>
                     <!--Contact Form-->
-                    <form class="contact-form" id="contact-form-data" action="https://sheetdb.io/api/v1/7tsrknpe60k00" method="POST" id="sheetdb-form">
+                    <form class="contact-form" id="contact-form-data" action="https://sheetdb.io/api/v1/7tsrknpe60k00" method="post" id="sheetdb-form">
                         <div class="row">
                             <!--Result-->
                             <div class="col-12" id="result"></div>
@@ -991,7 +992,24 @@
             </div>
 
         </div>
+<!--  Sheet DB JS -->
+        <script>
+            var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('thank.html', '_blank');
 
+          });
+        });
+        </script>
+<!--         Ended Sheet DB -->
     </section>
     <!--Contact End-->
 
@@ -1044,26 +1062,7 @@
 <!--             Ended Whatsapp chat support -->
             
     <!-- JavaScript -->
-<!--             Google Sheet Data JS -->
-                    <script>
-            var form = document.getElementById('sheetdb-form');
-        form.addEventListener("submit", e => {
-          e.preventDefault();
-          fetch(form.action, {
-              method : "POST",
-              body: new FormData(document.getElementById("sheetdb-form")),
-          }).then(
-              response => response.json()
-          ).then((html) => {
-            // you can put any JS code here
-            window.open('thank.html', '_blank');
-
-          });
-        });
-        </script>
-            
-<!--             Endded Sheet API -->
-            
+      
     <script src="vendor/js/bundle.min.js"></script>
     <!-- Plugin Js -->
     <script src="vendor/js/jquery.appear.js"></script>
