@@ -159,7 +159,7 @@
                 <h2 class="title mt-2">Lets start your <span class="alt-color js-rotating">project, website</span></h2>
             </div>
             <!--Contact Form-->
-            <form class="contact-form" id="modal-contact-form-data">
+            <form class="contact-form" action="https://sheetdb.io/api/v1/hi0f7t1o0gyzc" method="post" id="sheetdb-form">
                 <div class="row">
                     <!--Result-->
                     <div class="col-12" id="quote_result"></div>
@@ -180,7 +180,7 @@
                     <!--Right Column-->
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input class="form-control" id="quote_email" name="userEmail" placeholder="Email" required="" type="email">
+                            <input class="form-control" id="quote_email" name="qouteEmail" placeholder="Email" required="" type="email">
                         </div>
                         <div class="form-group">
                             <input class="form-control" id="quote_address" name="userAddress" placeholder="City / Country" required="" type="text">
@@ -193,7 +193,7 @@
                     <!--Full Column-->
                     <div class="col-md-12">
                         <div class="form-group">
-                            <textarea class="form-control" id="quote_message" name="userMessage" placeholder="Please explain your project in detail."></textarea>
+                            <textarea class="form-control" id="quote_message" name="quoteMessage" placeholder="Please explain your project in detail."></textarea>
                         </div>
                     </div>
 
@@ -207,7 +207,7 @@
                         </label>
                         </div>
 
-                        <a class="btn btn-large btn-rounded btn-blue btn-hvr-pink modal_contact_btn" href="javascript:void(0);" id="quote_submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Send Message</b>
+                        <button type="submit" class="btn btn-large btn-rounded btn-blue btn-hvr-pink modal_contact_btn" id="sheetdb-form"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Send Message</b>
                         <div class="btn-hvr-setting">
                             <ul class="btn-hvr-setting-inner">
                                 <li class="btn-hvr-effect"></li>
@@ -216,7 +216,7 @@
                                 <li class="btn-hvr-effect"></li>
                             </ul>
                         </div>
-                    </a>
+                    </button>
                     </div>
 
                 </div>
