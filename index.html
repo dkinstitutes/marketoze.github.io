@@ -221,27 +221,8 @@
                 </div>
             </form>
         </div>
-
     </header>
-      <!--  Sheet DB JS -->
-        <script>
-            var form = document.getElementById('sheetdb-form');
-        form.addEventListener("submit", e => {
-          e.preventDefault();
-          fetch(form.action, {
-              method : "POST",
-              body: new FormData(document.getElementById("sheetdb-form")),
-          }).then(
-              response => response.json()
-          ).then((html) => {
-            // you can put any JS code here
-            window.open('thanks.html', '_blank');
-
-          });
-        });
-        </script>
-<!--         Ended Sheet DB -->
-    <!--Header End-->
+        <!--Header End-->
 
     <!--Slider Start-->
     <section class="p-0 no-transition cursor-light" id="home">
@@ -1081,6 +1062,25 @@
 <!--             Ended Whatsapp chat support -->
             
     <!-- JavaScript -->
+            <!--  Sheet DB JS -->
+        <script>
+            var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('thanks.html', '_blank');
+
+          });
+        });
+        </script>
+<!--         Ended Sheet DB -->
+
     <script src="vendor/js/bundle.min.js"></script>
     <!-- Plugin Js -->
     <script src="vendor/js/jquery.appear.js"></script>
