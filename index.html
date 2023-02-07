@@ -944,7 +944,7 @@
                         <h2 class="title mt-0">Get In Touch</h2>
                     </div>
                     <!--Contact Form-->
-                    <form class="contact-form" action="https://sheetdb.io/api/v1/7tsrknpe60k00" method="post" id="sheet-form">
+                    <form class="contact-form" action="https://sheetdb.io/api/v1/7tsrknpe60k00" method="post" id="sheetdb-form">
                         <div class="row">
                             <!--Result-->
                             <div class="col-12" id="result"></div>
@@ -971,7 +971,7 @@
 
                             <!--Button-->
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-large btn-rounded btn-purple btn-hvr-blue d-block mt-4 contact_btn" id="sheet-form" ><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Send Message</b>
+                                <button type="submit" class="btn btn-large btn-rounded btn-purple btn-hvr-blue d-block mt-4 contact_btn" id="sheetdb-form" ><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Send Message</b>
                                 <div class="btn-hvr-setting">
                                     <ul class="btn-hvr-setting-inner">
                                         <li class="btn-hvr-effect"></li>
@@ -995,12 +995,12 @@
     <!-- JavaScript -->
       <!--  Sheet DB JS -->
         <script>
-            var form = document.getElementById('sheet-form');
+            var form = document.getElementById('sheetdb-form');
         form.addEventListener("submit", e => {
           e.preventDefault();
           fetch(form.action, {
               method : "POST",
-              body: new FormData(document.getElementById("sheet-form")),
+              body: new FormData(document.getElementById("sheetdb-form")),
           }).then(
               response => response.json()
           ).then((html) => {
